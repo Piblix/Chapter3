@@ -64,21 +64,23 @@
             // 
             // giveButton
             // 
-            this.giveButton.Location = new System.Drawing.Point(55, 203);
+            this.giveButton.Location = new System.Drawing.Point(45, 203);
             this.giveButton.Name = "giveButton";
             this.giveButton.Size = new System.Drawing.Size(184, 44);
             this.giveButton.TabIndex = 5;
             this.giveButton.Text = "Give $ 10 to Joe";
             this.giveButton.UseVisualStyleBackColor = true;
+            this.giveButton.Click += new System.EventHandler(this.GiveButton_Click);
             // 
             // ReceiveButton
             // 
-            this.ReceiveButton.Location = new System.Drawing.Point(307, 167);
+            this.ReceiveButton.Location = new System.Drawing.Point(303, 203);
             this.ReceiveButton.Name = "ReceiveButton";
             this.ReceiveButton.Size = new System.Drawing.Size(181, 43);
             this.ReceiveButton.TabIndex = 6;
             this.ReceiveButton.Text = "Recieve 5$ from Bob";
             this.ReceiveButton.UseVisualStyleBackColor = true;
+            this.ReceiveButton.Click += new System.EventHandler(this.ReceiveButton_Click);
             // 
             // Form1
             // 

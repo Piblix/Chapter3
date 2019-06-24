@@ -21,17 +21,34 @@ namespace GuysMoney
             InitializeComponent();
             bob = new Guy(){ Cash = 100, Name = "Bob" };
             joe = new Guy() { Cash = 50, Name = "Joe" };
-            UpdateForm();
-            
-
+            UpdateForm();           
         }
 
         private void UpdateForm()
         {
             bobText.Text = "Bob has " + bob.Cash + "$";
             joeText.Text = "Joe has " + joe.Cash + "$";
-            bankText.Text = "Bank has " + bank + "$;";
+            bankText.Text = "Bank has " + bank + "$";
 
+        }
+
+        private void GiveButton_Click(object sender, EventArgs e)
+        {
+            if(bank >= 10)
+            {
+                bank -= joe.RecieveCash(10);
+                UpdateForm();
+            }
+            else
+            {
+                MessageBox.Show("The bank is out og money");
+            }
+        }
+
+        private void ReceiveButton_Click(object sender, EventArgs e)
+        {
+            bank += bob.GiveCash(5);
+            UpdateForm();
         }
     }
 }
