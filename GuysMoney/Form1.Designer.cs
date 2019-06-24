@@ -73,7 +73,7 @@
             // 
             // ReceiveButton
             // 
-            this.ReceiveButton.Location = new System.Drawing.Point(291, 203);
+            this.ReceiveButton.Location = new System.Drawing.Point(307, 167);
             this.ReceiveButton.Name = "ReceiveButton";
             this.ReceiveButton.Size = new System.Drawing.Size(181, 43);
             this.ReceiveButton.TabIndex = 6;
