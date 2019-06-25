@@ -33,6 +33,8 @@
             this.bankText = new System.Windows.Forms.TextBox();
             this.giveButton = new System.Windows.Forms.Button();
             this.ReceiveButton = new System.Windows.Forms.Button();
+            this.JoeGivesToBob = new System.Windows.Forms.Button();
+            this.BobGivesToJoe = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // joeText
@@ -82,11 +84,33 @@
             this.ReceiveButton.UseVisualStyleBackColor = true;
             this.ReceiveButton.Click += new System.EventHandler(this.ReceiveButton_Click);
             // 
+            // JoeGivesToBob
+            // 
+            this.JoeGivesToBob.Location = new System.Drawing.Point(45, 270);
+            this.JoeGivesToBob.Name = "JoeGivesToBob";
+            this.JoeGivesToBob.Size = new System.Drawing.Size(184, 38);
+            this.JoeGivesToBob.TabIndex = 7;
+            this.JoeGivesToBob.Text = "Jo gives $10 to Bob";
+            this.JoeGivesToBob.UseVisualStyleBackColor = true;
+            this.JoeGivesToBob.Click += new System.EventHandler(this.JoeGivesToBob_Click);
+            // 
+            // BobGivesToJoe
+            // 
+            this.BobGivesToJoe.Location = new System.Drawing.Point(303, 270);
+            this.BobGivesToJoe.Name = "BobGivesToJoe";
+            this.BobGivesToJoe.Size = new System.Drawing.Size(180, 38);
+            this.BobGivesToJoe.TabIndex = 8;
+            this.BobGivesToJoe.Text = "Bob gives $5 to Joe";
+            this.BobGivesToJoe.UseVisualStyleBackColor = true;
+            this.BobGivesToJoe.Click += new System.EventHandler(this.BobGivesToJoe_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 301);
+            this.ClientSize = new System.Drawing.Size(540, 335);
+            this.Controls.Add(this.BobGivesToJoe);
+            this.Controls.Add(this.JoeGivesToBob);
             this.Controls.Add(this.ReceiveButton);
             this.Controls.Add(this.giveButton);
             this.Controls.Add(this.bankText);
@@ -106,6 +130,8 @@
         private System.Windows.Forms.TextBox bankText;
         private System.Windows.Forms.Button giveButton;
         private System.Windows.Forms.Button ReceiveButton;
+        private System.Windows.Forms.Button JoeGivesToBob;
+        private System.Windows.Forms.Button BobGivesToJoe;
     }
 }
 

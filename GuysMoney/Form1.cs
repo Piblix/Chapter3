@@ -50,5 +50,17 @@ namespace GuysMoney
             bank += bob.GiveCash(5);
             UpdateForm();
         }
+
+        private void JoeGivesToBob_Click(object sender, EventArgs e)
+        {
+            bob.RecieveCash(joe.GiveCash(10));
+            UpdateForm();
+        }
+
+        private void BobGivesToJoe_Click(object sender, EventArgs e)
+        {
+            joe.RecieveCash(bob.GiveCash(10));
+            UpdateForm();
+        }
     }
 }

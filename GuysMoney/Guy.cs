@@ -34,7 +34,7 @@ namespace GuysMoney
             }
             else
             {
-                MessageBox.Show(amount + "is not an amoubt I will take ", Name + " says...");
+                MessageBox.Show(amount + " is not an amount I will take ", Name + " says...");
                 return 0;
             }
         }
